@@ -17,7 +17,7 @@ def test_create_a_person():
     assert_that(response.content).is_equal_to(b'')
 
 
-@pytest.mark.skip(reason="no need to testing this now")
+# @pytest.mark.skip(reason="no need to testing this now")
 def test_create_a_person_without_data():
     file = open('/Users/avalith/Desktop/people-api/data/no_data.json', 'r')
     data_input = file.read()
@@ -29,7 +29,7 @@ def test_create_a_person_without_data():
     assert_that(response.status_code).is_equal_to(409)
 
 
-@pytest.mark.skip(reason="no need to testing this now")
+# @pytest.mark.skip(reason="no need to testing this now")
 def test_create_a_person_without_headers():
     file = open('/Users/avalith/Desktop/people-api/data/no_data.json', 'r')
     data_input = file.read()
